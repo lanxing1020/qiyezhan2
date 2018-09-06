@@ -1,0 +1,832 @@
+/*
+* @Author: www87
+* @Date:   2018-08-27 08:38:54
+* @Last Modified by:   www87
+* @Last Modified time: 2018-08-29 18:11:52
+*/
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	box-sizing:border-box;
+	font-family: "苹方";
+}
+i{
+	font-style: normal;
+}
+a{
+	text-decoration: none;
+}
+
+body{
+	padding-top: 81px;
+	width: 100%;
+	height: 100%;
+}
+.header1{
+	width:100%;
+	height: 80px;
+	background: #F8F8F8;
+	margin: 0 auto;
+	padding-top: 18.5px;
+	padding-bottom: 18.5px;
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1) !important;
+}
+.header1 h1{
+	width: 100%;
+	height: 100%;
+	font-size: 24px;
+    line-height: 20px;
+    color: #777;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-align: center;
+    display: none;
+}
+.header1 .gengduo{
+	width: 60px;
+	height:50px;
+	position: absolute;
+	left: 30px;
+	display: none;
+}
+.header1 .a1{
+	width: 175px;
+	height: 44px;
+	margin-left: 28px;
+	font-size: 24px;
+    line-height: 20px;
+    color: #777;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.header1 .a1:hover{
+	text-decoration: none;
+	color: #777;
+}
+.header1 .a1 img{
+	width: 50px;
+	height: 44px;
+	margin-right: 10px;
+}
+.header1 ul{
+	width: 399px;
+	height: 48px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.header1 ul li{
+	width: 105px;
+	height: 48px;
+	padding: 15px 12px 15px 12px;
+}
+.header1 ul li a{
+	color: #7A7977;
+	font-size: 12px;
+    line-height: 2;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.header1 ul li a:hover{
+	color: #CFCFCE;
+	text-decoration: none;
+}
+.header1 .more{
+	width: 252px;
+	height: 32px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+.header1 .more .one{
+	width: 106px;
+	height: 100%;
+	/* float: left; */
+	margin-right: 5px;
+	color: #7A7977;
+	border: 1px solid #7a7977 !important;
+    /* font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif; */
+          
+	padding: 5px;
+}
+.header1 .more .one a{
+	font-size: 13px;
+	font-weight: 600;
+    line-height: 0.86;
+     color: #777;  
+}
+.header1 .more .one a:hover{
+	text-decoration: none;
+}
+/* .header1 .more .one:hover{ */
+	/* box-shadow: 1px 1px 1px 1px #777 inset; */
+/* } */
+.header1 .more .two{
+	width: 146px;
+	height: 100%;
+	/* float: left; */
+	
+	color: #7A7977;
+	border: 1px solid #7a7977 !important;
+    /* font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif; */
+          
+	padding: 5px;
+}
+.header1 .more .two a{
+	font-size: 13px;
+	font-weight: 600;
+    line-height: 0.86;
+     color: #777;  
+}
+.header1 .more .two a:hover{
+	text-decoration: none;
+}
+.res{
+	width: 100%;
+	height: 42px;
+	margin: 0 auto;
+	background:#fff; 
+	padding-top: 14px;	
+}
+.res a{
+	font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #7a7977;
+    margin-left: 15px;
+    text-decoration: none;
+}
+.res a:nth-child(1){
+	margin-left: 0;
+}
+.res a:hover{
+	text-decoration: none;
+	color: #CFCFCE;
+}
+.res1{
+	width: 100%;
+	height: 42px;
+	margin: 0 auto;
+	background:rgba(189, 188, 188, 0.9); 
+	padding-top: 12px;
+	position: absolute;
+	top: 0;	
+}
+.res1 a{
+	font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.res1 a:nth-child(1){
+	margin-left: 0;
+}
+.res1 a:hover{
+	text-decoration: none;
+	color: #CFCFCE;
+}
+.banner{
+	/* margin-top: 81px; */
+	width: 100%;
+	height: 466px;
+	margin: 0 auto;
+	background-image: url('https://www.byton.com/img/2.9/product_experience_wide.jpg');
+	background-position: center;
+	background-size: cover;
+	padding: 72px 0 72px;
+	 position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+.res img{
+	width: 22px;
+	height: 22px;
+	display: none;
+}
+.banner .img1{
+	width: 42px;
+	height: 42px;
+}
+.banner h2{
+	margin-bottom: 20px;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 15%;
+}
+.banner h3{
+	font-size: 18px;
+    line-height: 1.33;
+    font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-weight: 400;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+.box{
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	width: 100%;
+	overflow: hidden;
+	padding: 60px 0 ;
+	background: #E7E7E6;
+}
+.box .box1{
+	text-align: center;
+}
+.box .box1 .containter{
+	max-width: calc(100% - 30px);
+    width: 670px;
+    margin: 0 auto;
+}
+.box .box1 .containter h4.li1{
+	font-size: 15px;
+    letter-spacing: 2px;
+    font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-weight: 600;
+    opacity: 0.5;
+    margin-bottom: 12px;
+    color: #908F8E;
+}
+.box .box1 .containter h3.li2{
+	font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    color: #383736;
+}
+ .box .box1 .containter p.li3{
+	font-size: 15px;
+    line-height: 1.6;
+	margin-bottom: 15px ;
+	color: #383736;
+}
+.box ul{
+	padding: 0 5%;
+	overflow: hidden;
+	height: 100%;
+}
+.box ul li{
+	text-align: left;
+	float: left;
+}
+.box ul li .pic{
+	margin-top: 15%;
+	background-image: url('https://www.byton.com/img/concept-experience-38.jpg');
+	background-position: center;
+	background-size: cover;
+	height: 320px;
+}
+.box ul li:nth-child(2) .pic{
+	background-image: url('https://www.byton.com/img/concept-experience-39.jpg');
+}
+.box ul li:nth-child(3) .pic{
+	background-image: url('https://www.byton.com/img/concept-experience-40.jpg');
+}
+.box ul li:nth-child(4) .pic{
+	background-image: url('https://www.byton.com/img/concept-experience-41.jpg');
+}
+.box ul li h3{
+	font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-weight: 500;
+    margin-bottom: 16px;
+    line-height: 1;
+    font-size: 24px;
+}
+.box ul li p{
+	font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+	font-size: 15px;
+    line-height: 1.6;
+}
+.sub{
+	border-bottom: 2px solid white;
+	width: 100%;
+	overflow: hidden;
+	padding: 60px 0 ;
+	background: #E7E7E6;
+}
+.sub .sub1{
+	text-align: center;
+	margin-bottom: 60px;
+}
+.sub .sub1 .containter{
+	max-width: calc(100% - 30px);
+    width: 670px;
+    margin: 0 auto;
+}
+.sub .sub1 .containter h4{
+	font-size: 15px;
+    letter-spacing: 2px;
+    font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-weight: 600;
+    opacity: 0.5;
+    margin-bottom: 12px;
+    color: #908F8E;
+}
+.sub .sub1  .containter h3{
+	font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    color: #383736;
+}
+ .sub .sub1 .containter p{
+	font-size: 15px;
+    line-height: 1.6;
+	margin-bottom: 15px ;
+	color: #383736;
+}
+.sub .sub2{
+	padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.sub .sub2 .list{
+	margin-top: 80px;
+	overflow: hidden;
+}
+.sub .sub2 .list .list2{
+	padding-left: 55px;
+}
+.sub .sub2 .list .list1{
+	text-align: left
+}
+.sub .sub2 .list .list1 .h-line{
+	height: 1px;
+    background-color: #383736;
+    margin: 0 auto;
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+.sub .sub2 .list .list1 h3{
+	font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-weight: 500;
+    margin-bottom: 16px;
+    line-height: 1;
+    font-size: 24px;
+}
+.sub .sub2 .list .list1 p{
+	line-height: 1.71;
+	font-size: 15px;
+	font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+.sub .sub2 .list .list2{
+	padding-left: 55px;	
+}
+.sub .sub2 .list .list2 .pic{
+	width: 100%;
+	background-image: url('https://www.byton.com/img/concept-experience-42.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 334px;
+}
+.sub .sub2 .list:nth-child(2) .list2 .pic{
+	background-image: url('https://www.byton.com/img/concept-experience-43.jpg');
+}
+.sub .sub2 .list:nth-child(3) .list2 .pic{
+	background-image: url('https://www.byton.com/img/concept-experience-44.jpg');
+}
+.last{
+	background-color: #383736;
+}
+.last .container{
+	padding: 30px ;
+}
+.last .container .bom1{
+	height: 623px;
+	width: 100%;
+	background-image: url('https://www.byton.com/img/2.11/app-trailer.jpg');
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 30px;
+}
+.last .container .bom2{
+	text-align: center;
+	color: #fff;
+}
+.last .container .bom2 h4{
+	font-size: 15px;
+    letter-spacing: 2px;
+    font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-weight: 600;
+    opacity: 0.5;
+    margin-bottom: 12px;
+}
+.last .container .bom2 h3{
+	font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-weight: 400;
+    line-height: 1;
+	margin-bottom: 20px;
+}
+.last .container .bom2 p{
+	font-size: 15px;
+    line-height: 1.6;
+
+}
+.last .container hr{
+	border: solid 1px #464342;
+}
+.last .container .bom3{
+	margin: 72px 0 85px;
+}
+.last .container .bom3 .phone{
+	height: auto;
+	background-image: url('https://www.byton.com/img/concept-experience-46.jpg');
+	background-size: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 588px;
+}
+.last .container .bom3 .more{
+	text-align: left;
+	color: #fff;
+}
+.last .container .bom3 .more h3{
+	font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-weight: 500;
+    margin-bottom: 16px;
+    line-height: 1;  
+	color: #fff;
+}
+.last .container .bom3 .more p{
+	margin-bottom: 55%;
+	font-size: 15px;
+    line-height: 1.6;
+    font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+} 
+.last .container .bom3 .more hr{
+	border: solid 1px #464342;
+}	
+.last .container .bom3 .more h5{
+	font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 1.6px;
+    text-align: left;
+    color: #9c9c9c;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+.last .container .bom3 .more .pic1{
+	height: 40px;
+	background-image: url('https://www.byton.com/img/app-store-badge@2x.png');
+	background-size: 135px 40px;
+	background-position: center left;
+	background-repeat: no-repeat;
+	margin-bottom: 30px;
+}
+.last .container .bom3 .more .pic2{
+	height: 40px;
+	background-image: url('https://www.byton.com/img/google-play-badge@2x.png');
+	background-size: 135px 40px;
+	background-position: center left;
+	background-repeat: no-repeat;
+	margin-bottom: 30px;
+}
+
+
+footer{
+	width: 100%;
+	height: 287px;
+	background: #383736;
+	/* margin-top: 1278px; */
+}
+.container{
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.logo img{
+	width: 53px;
+	height: 48px;
+}
+.logo{
+	float: left;
+    margin-bottom: 45px;
+    margin-top: 50px;
+    padding: 0;
+    margin-left: -12px;
+}
+footer .container .right{
+	float: right;
+    padding: 0;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+footer .container .right .tale{
+	padding: 0;
+	position: relative;
+}
+footer .container .right .tale:nth-child(5){
+	display: none;
+	
+}
+footer .container .right .tale img{
+	display: none;
+	height: 20px;
+	width: 18px;
+	position: absolute;
+	right: 0;
+	top: 30%;
+}
+footer .container .right h1{
+	color: #A9A9A8;
+    font-size: 11px;
+    font-weight: 700 !important;
+    line-height: 1;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 48px;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #464342;
+}
+footer .container .right p{
+	 font-size: 12px;
+    line-height: 1;
+    text-align: left;
+    color: #fff;
+    font-weight: 400;
+    float: left;
+    width: 100%;
+    letter-spacing: 1.5px;
+}
+footer .container .last{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	
+	padding-left: 17%;
+	border-top: 1px solid #464342;
+}
+footer .container .last p{
+	margin-right: 20px;
+	margin-top: 10px;
+	color: #A9A9A8;
+	font-size: 12px;
+}
+footer .container .last p:nth-child(3){
+	margin-right: 47%;
+	color: #fff;
+	font-size: 12px;
+}
+footer .container .last p:nth-child(1){
+	font-size: 10px;	 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 中屏 */
+		@media screen and (max-width: 1200px){
+}
+
+
+/* 小屏 */
+		@media screen and (max-width: 992px){
+
+		.header1 .gengduo{
+			display: inline-block;
+			width: 40px;
+			height:30px;
+			position: absolute;
+	
+			top: 35px;
+		}
+		.header1 .a1{
+			display: none;
+		}
+		.header1 ul{
+			display: none;
+		}
+		.header1 .more{
+			display: none;
+		}
+		.header1 h1{
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			font-size: 24px;
+    		line-height: 20px;
+   			color: #777;
+    		font-weight: 800;
+   		 	letter-spacing: 2px;
+    		text-align: center;
+		}
+		/* .res{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: baseline;
+		} */
+		.res .container{
+			margin-left: 0;
+			margin-right: 0;
+		}
+		.res .container .row{
+			margin-left: 0;
+			margin-right: 0;
+		}
+		.res{
+			position: relative;
+		}
+		.res img{
+			display: inline-block;
+			position: absolute;
+			right: 2%;
+			top: 30%;
+		}
+		.res a:nth-child(3){
+			float: left;
+		}
+		.res1{
+			display: none;
+		}
+		.res a:nth-child(1){
+			display: none;
+		}
+		.res a:nth-child(2){
+			display: none;
+		}
+		.res a:nth-child(4){
+			display: none;
+		}
+		.banner{
+			background-image: url('https://www.byton.com/img/2.9/product_experience_mobile.jpg');
+		}
+		.banner h2{
+			font-size: 24px;
+    		line-height: 1.25;
+		}
+		.banner h3{
+			font-size: 16px;
+    		line-height: 1.5;
+    		padding: 0 5%;
+		}
+		.sub .sub2 .list .list2{
+			padding-left: 0;
+			margin-top: 40px;	
+		}
+		.box ul li .pic{
+			margin-top: 5%;
+		}
+		.last .container .bom3 .more p{
+			margin-bottom: 10%;
+		}
+		.last .container .bom3 .more{
+			text-align: center;
+		}
+		.last .container .bom3 .more .pic1{
+			background-position: center;
+		}
+		.last .container .bom3 .more .pic2{
+			background-position: center;
+		}
+
+
+
+
+
+
+		footer{
+			width: 100%;
+			height: 442px;
+			background: #383736;
+			/* margin-top: 2556px; */
+		}
+		.logo{
+			display: flex;
+			flex-direction: row;
+			justify-content:center;
+			align-items: center;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		footer .container .right p{
+			display: none;
+		}
+		footer .container .right{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+		footer .container .right h1{
+			margin-top: 10px;
+			line-height: 2;
+		}
+		footer .container .last{
+			border: none;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			padding-left: 0;
+		}
+		footer .container .right .tale:nth-child(5){
+			display: inline-block;
+	
+		}
+		footer .container .last p:nth-child(1){
+			display: none;	 
+		}
+		footer .container .last p:nth-child(2){
+			display: none;	 
+		}
+		footer .container .last p:nth-child(3){
+			display: none;	 
+		}
+		footer .container .right .tale img{
+			display: inline-block;
+		}
+		.last .container .bom3 .more h5{
+			text-align: center;
+		}
+
+
+
+
+}
+/* 移动端 */
+@media screen and (max-width: 768px){
+	/* .banner{
+		height: 546px;
+	}
+	ul .li2:nth-child(1) .usb{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			padding-left: 10%;
+	}
+	ul .li2 h2{
+			margin-top: 150px;
+	}
+	ul .li2:nth-child(1) h2{
+			margin-top: 120px;
+	}
+	ul .li2{
+			height: 242px;
+	} */
+	footer{
+			width: 100%;
+			height: 594px;
+			background: #383736;
+			/* margin-top: 1300px; */
+			padding: 20px;
+	}
+	footer .container .last{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+	}
+	footer .container .last p{
+		margin: 5px;
+	}
+	.sub .sub2 .list .list2 .pic{
+		width: 277px;
+		height: 156px;	
+	}
+	.box ul li .pic{
+		width: 231px;
+		height: 130px;
+	}
+	.sub .sub2 .list{
+		margin-top: 40px;
+		overflow: hidden;
+	}
+}
+

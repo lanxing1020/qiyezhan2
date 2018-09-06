@@ -1,0 +1,696 @@
+/*
+* @Author: www87
+* @Date:   2018-08-27 08:38:54
+* @Last Modified by:   www87
+* @Last Modified time: 2018-08-30 11:28:42
+*/
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	box-sizing:border-box;
+	 font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif !important;
+}
+i{
+	font-style: normal;
+}
+a{
+	text-decoration: none;
+}
+
+body{
+	padding-top: 81px;
+	width: 100%;
+	height: 100%;
+}
+.header1{
+	width:100%;
+	height: 80px;
+	background: #F8F8F8;
+	margin: 0 auto;
+	padding-top: 18.5px;
+	padding-bottom: 18.5px;
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+.header1 h1{
+	width: 100%;
+	height: 100%;
+	font-size: 24px;
+    line-height: 20px;
+    color: #777;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-align: center;
+    display: none;
+}
+.header1 .gengduo{
+	width: 60px;
+	height:50px;
+	position: absolute;
+	left: 2%;
+	display: none;
+}
+.header1 .a1{
+	width: 175px;
+	height: 44px;
+	margin-left: 28px;
+	font-size: 24px;
+    line-height: 20px;
+    color: #777;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.header1 .a1:hover{
+	text-decoration: none;
+	color: #777;
+}
+.header1 .a1 img{
+	width: 50px;
+	height: 44px;
+	margin-right: 10px;
+}
+.header1 ul{
+	width: 399px;
+	height: 48px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.header1 ul li{
+	width: 105px;
+	height: 48px;
+	padding: 15px 12px 15px 12px;
+}
+.header1 ul li a{
+	color: #7A7977;
+	font-size: 12px;
+    line-height: 2;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.header1 ul li a:hover{
+	color: #CFCFCE;
+	text-decoration: none;
+}
+.header1 .more{
+	width: 266px;
+	height: 32px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+.header1 .more .one{
+	width: 106px;
+	height: 100%;
+	/* float: left; */
+	margin-right: 5px;
+	color: #7A7977;
+	border: 1px solid #7a7977 !important;
+    /* font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif; */
+          
+	padding: 5px;
+}
+.header1 .more .one a{
+	font-size: 13px;
+	font-weight: 600;
+    line-height: 0.86;
+     color: #777;  
+}
+.header1 .more .one a:hover{
+	text-decoration: none;
+}
+/* .header1 .more .one:hover{ */
+	/* box-shadow: 1px 1px 1px 1px #777 inset; */
+/* } */
+.header1 .more .two{
+	width: 160px;
+	height: 100%;
+	/* float: left; */
+	
+	color: #7A7977;
+	border: 1px solid #7a7977 !important;
+    /* font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif; */
+          
+	padding: 5px;
+}
+.header1 .more .two a{
+	font-size: 13px;
+	font-weight: 600;
+    line-height: 0.86;
+     color: #777;  
+}
+.header1 .more .two a:hover{
+	text-decoration: none;
+}
+.res{
+	display: none;
+	width: 100%;
+	height: 42px;
+	margin: 0 auto;
+	background:#fff; 
+	position:absolute;
+	top: 80px;
+	left: 0;
+}
+.header1 ul .li1:hover .res{
+	display: block;
+}
+.banner .banner1{
+	padding: 0;
+}
+.banner .banner2{
+	padding: 0;
+}
+.banner .banner1 .pic1{
+	border-right: 3px solid #fff;
+	overflow: hidden;
+	float: left;
+	height: calc(100vh - 81px) ;
+	/* height:507px; */
+	background-image: url('https://www.byton.com/img/FMC_667.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.banner .banner1 .pic2{
+	border-right: 3px solid #fff;
+	overflow: hidden;
+	float: left;
+	height: calc(100vh - 81px) ;
+	/* height:507px; */
+	background-image: url('https://www.byton.com/img/FMC_489.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.banner .banner2 .pic1{
+	height: calc(50vh - 42px);
+	overflow: hidden;
+	border-bottom: 3px solid #fff;
+	background-image: url('https://www.byton.com/img/FMC_631.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.banner .banner2 .pic2{
+	height: calc(50vh - 42px);
+	overflow: hidden;
+	border-bottom: 3px solid #fff;
+	background-image: url('https://www.byton.com/img/FMC_088.jpg');
+	background-size: cover;
+	background-position: center;
+}
+section{
+	padding-bottom: 28px;
+	background-color: #f1f1f1;
+	overflow: hidden;
+	text-align: center;	
+	width: 100%;
+}
+section span{
+	width: 100%;
+	font-size: 12px;
+    line-height: 6;
+    letter-spacing: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 48px;
+    color: #383736;
+}
+section .shugang{
+	width: 50%;
+	height: 40px;
+	/* float: left; */
+	border-right: 2px solid #A7A7A6;
+}
+section .text{
+	width: 100%;
+	padding-top: 28px;
+	padding-bottom: 24px;
+	overflow: hidden;
+	text-align: center;
+}
+section .text h4{
+	line-height: 1.5;
+    margin-bottom: 14px;
+    font-weight: 300;
+    margin: auto;
+}
+section .text p{
+	font-weight: 400;
+    margin: auto;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 14px;
+    color: #383736;
+}
+section .box{
+	overflow: hidden;
+}
+section .box .box1{
+	overflow: hidden;
+	float: left;
+	margin-top: 20px;
+}
+section .box .box1 span{
+	width: 100%;
+	text-align: center;
+	color: #a1664c;
+	font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    display: block;
+    margin: 0;
+    letter-spacing: 0.5px;
+    text-transform: none;
+}
+section .box .box1 span:nth-child(2){
+	color: #383736;
+}
+section .box .box1 a{
+	font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #383736
+}
+section .sub{
+	padding-top: 42px;
+	padding-bottom: 28px;
+	width: 100%;
+	overflow: hidden;
+	background-color: #383736;
+	margin-top: 40px;
+}
+section .sub span{
+	font-size: 12px;
+    line-height: 1;
+    letter-spacing: 4px;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+}
+section .sub .shugang{
+	margin-top: 30px;
+}
+section .sub .tittle{
+	height: 30px;
+	width: 100%;
+	padding-left: 33%;
+	margin-top: 20px;
+}
+section .sub .tittle .list{
+	margin-right: 15px;
+	float: left;
+	font-weight: 600;
+    font-size: 12px;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    line-height: 2;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #a9a9a8;
+}
+section .sub .tittle hr{
+	display: none;
+}
+.jobs{
+	background-color: #f8f8f8;
+	overflow: hidden;
+	width: 100%;
+}
+.jobs .lis hr{
+	display: none;
+	width: 50px;
+	background-color: #000;
+	height: 2px;
+	margin-left:20px; 
+}
+.jobs label{
+	max-width: 100%;
+    opacity: 0.72;
+    font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 2;
+    
+    text-align: left;
+    color: #a9a9a8;
+    text-transform: uppercase;
+    padding: 48px 15px 24px;
+    letter-spacing: 0.5px;
+}
+.jobs label:nth-child(1){
+	color: #000;
+	font-size: 14px;
+    font-weight: 600;
+    line-height: 1.71;
+    max-width: 100%;
+}
+.jobs label:nth-child(2){
+	color: #A9A9A8;
+}
+.jobs label:nth-child(3){
+	color: #A9A9A8;
+}
+.jobs label:nth-child(5){
+	font-size: 14px;
+    font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-weight: 600;
+    line-height: 1.71;
+    color: #000;
+    max-width: 100%;
+    letter-spacing: 0.5px;
+}
+.jobs .lis:nth-child(1) label:nth-child(1){
+	max-width: 100%;
+    opacity: 0.72;
+    font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 4px;
+    text-align: left;
+    color: #a9a9a8;
+    text-transform: uppercase;
+    padding: 48px 15px 24px;
+}
+.jobs .lis:nth-child(1) label:nth-child(4){
+	max-width: 100%;
+    opacity: 0.72;
+    font-family: "Facto", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 4px;
+    text-align: left;
+    color: #a9a9a8;
+    text-transform: uppercase;
+    padding: 48px 15px 24px;
+}
+.jobs .lis:nth-child(2){
+	background-color: #EFEFEF;
+}
+.jobs .lis:nth-child(4){
+	background-color: #EFEFEF;
+}
+.jobs .lis:nth-child(6){
+	background-color: #EFEFEF;
+}
+.jobs .lis:nth-child(8){
+	background-color: #EFEFEF;
+}
+.jobs .lis:nth-child(1){
+	 letter-spacing: 1px;
+}
+
+
+
+
+
+footer{
+	width: 100%;
+	height: 287px;
+	background: #383736;
+	/* margin-top: 60%; */
+}
+.container{
+	padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.logo img{
+	width: 53px;
+	height: 48px;
+}
+.logo{
+	float: left;
+    margin-bottom: 45px;
+    margin-top: 50px;
+    padding: 0;
+    margin-left: -12px;
+}
+footer .container .right{
+	float: right;
+    padding: 0;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+footer .container .right .tale{
+	padding: 0;
+	position: relative;
+}
+footer .container .right .tale:nth-child(5){
+	display: none;
+	
+}
+footer .container .right .tale img{
+	display: none;
+	height: 20px;
+	width: 18px;
+	position: absolute;
+	right: 0;
+	top: 30%;
+}
+footer .container .right h1{
+	color: #A9A9A8;
+    font-size: 11px;
+    font-weight: 700 !important;
+    line-height: 1;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 48px;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #464342;
+}
+footer .container .right p{
+	 font-size: 12px;
+    line-height: 1;
+    text-align: left;
+    color: #fff;
+    font-weight: 400;
+    float: left;
+    width: 100%;
+    letter-spacing: 1.5px;
+}
+footer .container .last{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	
+	padding-left: 17%;
+	border-top: 1px solid #464342;
+}
+footer .container .last p{
+	margin-right: 20px;
+	margin-top: 10px;
+	color: #A9A9A8;
+	font-size: 12px;
+}
+footer .container .last p:nth-child(3){
+	margin-right: 47%;
+	color: #fff;
+	font-size: 12px;
+}
+footer .container .last p:nth-child(1){
+	font-size: 10px;	 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 中屏 */
+		@media screen and (max-width: 1200px){
+}
+
+
+/* 小屏 */
+		@media screen and (max-width: 992px){
+
+		.header1 .gengduo{
+			display: inline-block;
+			width: 40px;
+			height:30px;
+			position: absolute;
+	
+			top: 35px;
+		}
+		.header1 .a1{
+			display: none;
+		}
+		.header1 ul{
+			display: none;
+		}
+		.header1 .more{
+			display: none;
+		}
+		.header1 h1{
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			font-size: 24px;
+    		line-height: 20px;
+   			color: #777;
+    		font-weight: 800;
+   		 	letter-spacing: 2px;
+    		text-align: center;
+		}
+		.banner .banner2{
+			display: none;
+		}
+		.jobs .lis:nth-child(1){
+			display: none;
+		}
+
+
+
+
+
+
+
+		footer{
+			width: 100%;
+			height: 442px;
+			background: #383736;
+			/* margin-top: 2556px; */
+		}
+		.logo{
+			display: flex;
+			flex-direction: row;
+			justify-content:center;
+			align-items: center;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		footer .container .right p{
+			display: none;
+		}
+		footer .container .right{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+		footer .container .right h1{
+			margin-top: 10px;
+			line-height: 2;
+		}
+		footer .container .last{
+			border: none;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			padding-left: 0;
+		}
+		footer .container .right .tale:nth-child(5){
+			display: inline-block;
+	
+		}
+		footer .container .last p:nth-child(1){
+			display: none;	 
+		}
+		footer .container .last p:nth-child(2){
+			display: none;	 
+		}
+		footer .container .last p:nth-child(3){
+			display: none;	 
+		}
+		footer .container .right .tale img{
+			display: inline-block;
+		}
+
+
+
+
+
+}
+/* 移动端 */
+@media screen and (max-width: 768px){
+	.banner .banner2{
+		display: block;
+	}
+	.banner .banner1{
+		height: 251px;
+	}
+	.banner .banner1 .pic1{
+		height: 251px;
+	}
+	.banner .banner1 .pic2{
+		height: 251px;
+	}
+	.banner .banner2 .pic2{
+		display: none;
+	}
+	section .sub .shugang{
+	margin-top: 0;
+	margin-bottom:40px;
+	
+	}
+	section .sub{
+		padding-bottom: 80px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	section .sub .tittle{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-left:20%; 
+	}
+	section .sub .tittle .list{
+		padding: 0;
+		margin: 0;
+		margin-top: 10px;
+	}
+	section .sub .tittle hr{
+		display: block;
+		padding: 0;
+		margin: 0;
+		width: 80%;
+	}
+	.jobs .lis hr{
+		display: block;
+
+	}
+	.jobs label{
+		padding: 0 0 0 15px ;
+	}
+
+	footer{
+			width: 100%;
+			height: 594px;
+			background: #383736;
+			/* margin-top: 1300px; */
+			padding: 20px;
+	}
+	footer .container .last{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+	}
+	footer .container .last p{
+		margin: 5px;
+	}
+}
+
